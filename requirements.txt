@@ -1,0 +1,8 @@
+fastapi[all]
+python-dotenv
+alembic
+sqlalchemy
+requests
+psycopg2
+asyncpg
+pytest
