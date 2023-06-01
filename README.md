@@ -37,6 +37,7 @@ _**GET .../question/**_
   "quantity": "int"
 }
 ```
+![alt text](https://raw.githubusercontent.com/Hastred45/bewise_tast_1/f8ec7c9d36657da1364b4369f8ca541df315a35c/Screenshot_2.png)
 Запрос на получение вопросов от API jservice.io  
 _**POST.../question/?quest_num=1**_
 ```JSON
