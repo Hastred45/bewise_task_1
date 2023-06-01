@@ -30,26 +30,26 @@
 
 ### Примеры запросов
 
-> Запрос количества вопросов в БД
-> _**GET .../question/**_
-> ```JSON
-> {
->   "quantity": "int"
-> }
-> ```
-> Запрос на получение вопросов от API jservice.io
-> _**POST.../question/?quest_num=1**_
-> ```JSON
-> {
->   "question": "str",
->   "answer": "str"
-> }
-> ```
-> Запрос на получение вопросов из БД
-> _**GET.../question/?quest_num=1**_
-> ```JSON
-> {
->   "question": "str",
->   "answer": "str"
-> }
-> ```
+Запрос количества вопросов в БД
+_**GET .../question/**_
+```JSON
+{
+  "quantity": "int"
+}
+```
+Запрос на получение вопросов от API jservice.io
+_**POST.../question/?quest_num=1**_
+```JSON
+{
+  "question": "str",
+  "answer": "str"
+}
+```
+Запрос на получение вопросов из БД
+_**GET.../question/?quest_num=1**_
+```JSON
+{
+  "question": "str",
+  "answer": "str"
+}
+```
