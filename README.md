@@ -30,15 +30,17 @@
 
 ### Примеры запросов
 
-Запрос количества вопросов в БД  
+1. Запрос количества вопросов в БД  
 _**GET .../question/**_
 ```JSON
 {
   "quantity": "int"
 }
 ```
-![alt text](https://raw.githubusercontent.com/Hastred45/bewise_tast_1/f8ec7c9d36657da1364b4369f8ca541df315a35c/Screenshot_2.png)
-Запрос на получение вопросов от API jservice.io  
+![1](https://raw.github.com/Hastred45/bewise_task_1/f8ec7c9d36657da1364b4369f8ca541df315a35c/Screenshot_2.png)  
+  
+  
+2. Запрос на получение вопросов от API jservice.io  
 _**POST.../question/?quest_num=1**_
 ```JSON
 {
@@ -46,6 +48,9 @@ _**POST.../question/?quest_num=1**_
   "answer": "str"
 }
 ```
+![1](https://raw.github.com/Hastred45/bewise_task_1/f8ec7c9d36657da1364b4369f8ca541df315a35c/Screenshot_3.png)  
+  
+  
 Запрос на получение вопросов из БД  
 _**GET.../question/?quest_num=1**_
 ```JSON
@@ -54,3 +59,4 @@ _**GET.../question/?quest_num=1**_
   "answer": "str"
 }
 ```
+![1](https://raw.github.com/Hastred45/bewise_task_1/f8ec7c9d36657da1364b4369f8ca541df315a35c/Screenshot_4.png)
