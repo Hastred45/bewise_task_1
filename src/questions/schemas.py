@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel
 
 
-class LastQuestion(BaseModel):
+class Questions(BaseModel):
     question: Optional[str]
     answer: Optional[str]
 
@@ -12,7 +12,7 @@ class LastQuestion(BaseModel):
 
 
 class QuestionQuantity(BaseModel):
-    quantity: Optional[int]
+    quantity: int
 
     class Config:
         orm_mode = True
