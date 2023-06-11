@@ -52,8 +52,9 @@ async def get_quest(
         total = await quantity(db)
         raise HTTPException(
             status_code=400,
-            detail=f'В БД недостаточно вопросов для вас (доступно {total.quantity} вопросов). Вы можете '
-            'сделать запрос через POST метод к endpoint /question/, '
-            'или уменьшить количество вопросов.'
+            detail=f'В БД недостаточно вопросов для вас '
+                   f'(доступно {total.quantity}). Вы можете '
+                   f'сделать запрос через POST метод к endpoint /question/, '
+                   f'или уменьшить количество вопросов.'
         )
     return question_results
