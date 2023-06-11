@@ -49,9 +49,10 @@ async def get_quest(
     '''Если в базе уже есть вопросы'''
     question_results = await get_questions_from_database(num, db)
     if len(question_results) < num:
+        total = await quantity(db)
         raise HTTPException(
             status_code=400,
-            detail='В БД недостаточно вопросов для вас. Вы можете '
+            detail=f'В БД недостаточно вопросов для вас (доступно {total.quantity} вопросов). Вы можете '
             'сделать запрос через POST метод к endpoint /question/, '
             'или уменьшить количество вопросов.'
         )
